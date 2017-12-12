@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    generate-ddl: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/movies?useSSL=false
+    username: root
+
+  mvc.view:
+    prefix: /WEB-INF/
+    suffix: .jsp
+
+logging.level:
+  root: WARN
+  org.superbiz.moviefun: DEBUG
+
+s3:
+  accessKey: AKIAIEA5FRP3VAKH73HQ
+  secretKey: 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
+  bucketName: student-artifacts-belford
